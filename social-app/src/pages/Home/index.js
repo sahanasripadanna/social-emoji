@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import PostCard from '../../components/PostCard';
+import Post from '../../components/Post';
 
 
 
@@ -13,7 +13,7 @@ export default class Home extends Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:4000')
+    fetch('http://localhost:4000/api')
         .then(res => res.json())
         .then(data => this.setState({data}))
         .catch((error) => {
@@ -21,17 +21,15 @@ export default class Home extends Component {
         });
   }
 
-  
-
   render(){
   	
 
     return(
         <div>
-        	<h1>Em😊jibook</h1>
+        	<h1>Em<span>😊</span>jibook</h1>
         	 <div className="posts">
                     {this.state.data.map( data =>
-                        <PostCard key={data.id} data={data} />
+                        <Post key={data.id} data={data} />
                     )}
              </div>
         	

@@ -1,0 +1,25 @@
+.card{
+	padding: 5px;
+	margin: 10px 40px;
+	background-color: #9AADBF;
+	text-decoration: none;
+	display: block;
+	border-radius: 25px;
+  	border: 1px solid black;
+
+}
+
+.card ul{
+	list-style: none;
+}
+
+.author{
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.date{
+	text-align: right;
+	
+}

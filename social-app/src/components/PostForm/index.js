@@ -1,4 +1,4 @@
-import React, {Component}from "react";
+import React, {Component} from "react";
 
 
 class PostForm extends Component {
@@ -46,7 +46,7 @@ class PostForm extends Component {
             body: JSON.stringify(this.state)
         })
             .then(res => {
-                console.log(res)
+                // console.log(res)
             }) 
             .catch(e => {
                 console.log(e)
@@ -59,10 +59,10 @@ class PostForm extends Component {
         const {Name, Text} = this.state;
         
         return( 
-            <div>
+            <div className="submitPost">
                 <form onSubmit={e => this.submitHandler(e)}>
                     <input type="text" name="Name" placeholder="Your Name" value={Name} onChange={this.changeHandler}/>
-                    <input type="text" name="Text" placeholder="share your thoughts to be translated into pictures!" value={Text} onChange={this.changeHandler}/>
+                    <input type="text" name="Text" placeholder="share your thoughts!" size="30" value={Text} onChange={this.changeHandler}/>
                     <button type='submit'>Post</button>
                 </form>
         </div>

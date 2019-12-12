@@ -4,7 +4,7 @@ export function UserInformation({ email }) {
 	return (
 		<div>
 		<p>Hello, {email}.</p>
-		<p>what's good</p>
+		<p>Welcome to EmojiBook! Click post to submit a post.</p>
 		</div>
 
 	)

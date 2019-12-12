@@ -4,7 +4,7 @@ import PostForm from '../../components/PostForm/index';
 export default function Post(){
     return (
         <div>
-            <h2 className="post">Post My Thoughts in Emoji</h2>
+            <h1 className="post">Post My Thoughts in Emoji</h1>
             <PostForm />
         </div>
     )

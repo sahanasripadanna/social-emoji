@@ -94,27 +94,27 @@ function App() {
       console.log('error', error);
     })
   }
-//<UserProfile user={user}/>
+
 
   return (
     <div className="App">
       <Header loggedIn={loggedIn} logoutFunction={logoutFunction}/>
       <Router>
+        <Route exact path='/profile'>
+          <UserProfile user={user}/>
+        </Route>
         <Route exact path='/'>
           { loggedIn ? <Home/>: <Redirect to="/login" />}
         </Route>
         <Route exact path='/login'>
           { loggedIn ? <Redirect to="/" />: <Login loginFunction={loginFunction}/>}
-
         </Route>
         <Route exact path='/post'>
           { loggedIn ? <PostForm/>: <Login loginFunction={loginFunction}/>}
-
         </Route>
         <Route exact path='/sign-up'>
           { loggedIn ? <Redirect to="/" />: <Signup signupFunction={signupFunction}/>}
         </Route>
-        
       </Router>
     </div>
   );

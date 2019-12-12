@@ -1,0 +1,24 @@
+body{
+  background-color: #E6E6E6;
+}
+
+Header{
+  background-color: #FFD131;
+  border-bottom: 1px solid black;
+}
+
+Header nav {
+
+  margin: 0 auto;
+  max-width: 1080px;
+  /*align-items: center;*/
+  display: flex;
+  padding: 10px 0;
+  justify-content: flex-end;
+}
+
+Header nav a  {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+}

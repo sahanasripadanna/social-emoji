@@ -6,7 +6,7 @@ export default function UserProfile({ user }){
 	
 	return (
 	<div>
-		<h1>User Profile for {user.uid && user.uid}</h1>
+		
 		<UserInformation email={user.email ? user.email : "whoops"}/>
 
 	</div>

@@ -38,7 +38,7 @@ class PostForm extends Component {
     }
 
     updateAPI(){
-        fetch('http://localhost:4000/receive', {
+        fetch('https://dwa-final-project.herokuapp.com/receive', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -61,7 +61,9 @@ class PostForm extends Component {
         return( 
             <div className="submitPost">
                 <form onSubmit={e => this.submitHandler(e)}>
+                    <label htmlFor="Name">Name: </label>
                     <input type="text" name="Name" placeholder="Your Name" value={Name} onChange={this.changeHandler}/>
+                    <label htmlFor="Name">Message: </label>
                     <input type="text" name="Text" placeholder="share your thoughts!" size="30" value={Text} onChange={this.changeHandler}/>
                     <button type='submit'>Post</button>
                 </form>

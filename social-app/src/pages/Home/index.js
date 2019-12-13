@@ -13,7 +13,7 @@ export default class Home extends Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:4000/api')
+    fetch('https://dwa-final-project.herokuapp.com/api')
         .then(res => res.json())
         .then(data => this.setState({data}))
         .catch((error) => {

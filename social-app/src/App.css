@@ -4,8 +4,9 @@ body{
 
 }
 
-.button{
-
+button{
+  background-color: #9AADBF;
+  padding: 10px;
 }
 
 input[type=text] {
@@ -17,10 +18,12 @@ input[type=text] {
 }
 
 .submitPost{
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  margin: 10px;
+  padding: 10px;
+  /*flex-direction: column;
   flex-wrap: nowrap;
-  margin: auto;
+  margin: auto;*/
 }
 
 p{
@@ -35,6 +38,7 @@ h1{
 Header{
   background-color: #FFD131;
   border-bottom: 1px solid black;
+  font-family: 'Solway', serif;
 }
 
 Header nav {
